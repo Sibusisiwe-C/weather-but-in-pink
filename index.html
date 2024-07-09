@@ -4,55 +4,67 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pink Weather</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="weather-app">
-    <header>
+      <header>
         <form class="search-form" id="search-form">
-          <input type="search" placeholder="Enter City" required class="search-form-input" id="search-form-input"/>
-          <input type="submit" value="search" class="search-form-button"/>
+          <input
+            type="search"
+            placeholder="Enter City"
+            required
+            class="search-form-input"
+            id="search-form-input"
+          />
+          <input type="submit" value="search" class="search-form-button" />
         </form>
-    </header>
-    <main>
+      </header>
+      <main>
         <div class="weather-data">
           <div class="weather-info">
-    <h1 class="weather-city" id="weather-city"> </h1>
-<p class="weather-details">
-         <span id="time"> </span>, <span id="description"> </span>
-          <br />
-          Humidity: <strong id="humidity"> </strong>, Wind: <strong id="wind"> </strong>
-        </p>
-      </div>
-      <div class="weather-temperature-container">
-        <div id="icon" class="weather-icon"> </div>
-      <div class="weather-temperature" id="weather-temperature"> </div>
-      <div class="weather-unit">°C</div>
-      </div>
+            <h1 class="weather-city" id="weather-city"></h1>
+            <p class="weather-details">
+              <span id="time"> </span>, <span id="description"> </span>
+              <br />
+              Humidity: <strong id="humidity"> </strong>, Wind:
+              <strong id="wind"> </strong>
+            </p>
+          </div>
+          <div class="weather-temperature-container">
+            <div id="icon" class="weather-icon"></div>
+            <div class="weather-temperature" id="weather-temperature"></div>
+            <div class="weather-unit">°C</div>
+          </div>
         </div>
-    </main>
-    <footer>
-      <p>
-        This project was coded by
-        <a href="https://github.com/Sibusisiwe-C" target="_blank"
-          >Sibusisiwe Cumbi</a
-        >
-        and is
-        <a
-          href="https://github.com/Sibusisiwe-C/weather-but-in-pink"
-          target="_blank"
-        >
-          on GitHub</a
-        >
-        and hosted on Netlify</a
-        >
-      </p>
-    </footer>
-</div>
-<script src="/src/index.js"></script>
+      </main>
+      <footer>
+        <p>
+          This project was coded by
+          <a href="https://github.com/Sibusisiwe-C" target="_blank"
+            >Sibusisiwe Cumbi</a
+          >
+          and is
+          <a
+            href="https://github.com/Sibusisiwe-C/weather-but-in-pink"
+            target="_blank"
+          >
+            on GitHub</a
+          >
+          and hosted on
+          <a href="https://weatherbutinpink.netlify.app/" target="_blank"
+            >Netlify</a
+          >
+        </p>
+      </footer>
+    </div>
+    <script src="/src/index.js"></script>
   </body>
 </html>
