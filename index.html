@@ -4,24 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pink Weather</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/style.css">
   </head>
   <body>
+    <div class="weather-app">
     <header>
-        <form>
-          <input type="search" placeholder="Enter City" required/>
-          <input type="submit" value="search"/>
+        <form class="search-form">
+          <input type="search" placeholder="Enter City" required class="search-form-input"/>
+          <input type="submit" value="search" class="search-form-button"/>
         </form>
     </header>
     <main>
-        <div>
-    <h1>Durban</h1>
-<p>
+        <div class="weather-data">
+    <h1 class="weather-city">Durban</h1>
+<p class="weather-details">
           Tuesday 14:49, scattered clouds
           <br />
-          Humidity: 66%, Wind: 3.13km/h
+          Humidity: <strong>66%</strong>, Wind: <strong>3.13km/h</strong>
         </p>
       </div>
-      <div>🌤️ 12°C</div>
+      <div class="weather-temperature-container">
+      <div class="weather-icon">🌤️ </div>
+      <div class="weather-temperature">13</div>
+      <div class="weather-unit">°C</div>
+      </div>
     </main>
     <footer>
       <p>
@@ -36,10 +45,10 @@
         >
           on GitHub</a
         >
-        and
-          >hosted on Netlify</a
+        and hosted on Netlify</a
         >
       </p>
     </footer>
+</div>
   </body>
 </html>
