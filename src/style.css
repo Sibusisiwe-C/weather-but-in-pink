@@ -1,6 +1,7 @@
 body {
   background-color: #ff63b5;
 }
+
 .baskervville-sc-regular {
   font-family: "Baskervville SC", serif;
   font-weight: 400;
@@ -50,6 +51,7 @@ main {
 .weather-data {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 .weather-city {
@@ -63,6 +65,7 @@ main {
   color: rgba(39, 33, 66, 0.4);
   line-height: 24px;
   font-weight: 500;
+  margin-top: 10px;
 }
 
 .weather-details strong {
@@ -71,11 +74,12 @@ main {
 
 .weather-temperature-container {
   display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .weather-icon {
   font-size: 44px;
-  margin-top: 22px;
 }
 
 .weather-temperature {
@@ -85,7 +89,6 @@ main {
 }
 
 .weather-unit {
-  margin-top: 16px;
   font-size: 28px;
 }
 
